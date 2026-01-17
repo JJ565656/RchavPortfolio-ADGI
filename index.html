@@ -3,65 +3,72 @@
 <head>
   <meta charset="utf-8">
   <title>Personal Portfolio-ADGI Week 2025 Project Page</title>
-    
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
-  
+
   <style>
     body{
       background-color: #F5F1EA;
       font-size: 16px;
       margin: 0;
     }
-      
-    /**brand font guidelines**/      
+
+    /**brand font guidelines**/
     h1{
-      font-family: "Bitter", serif; 
+      font-family: "Bitter", serif;
       font-size: 6.876em;
       color: #3E3A39;
       font-weight: 500;
+      margin: 0;
     }
-        
+
     h2{
-      font-family: "Bitter", serif; 
+      font-family: "Bitter", serif;
       font-size: 4.25em;
       color: #3E3A39;
+      margin: 0;
     }
-        
+
     h3{
-      font-family: "DM Sans", sans-serif; 
+      font-family: "DM Sans", sans-serif;
       font-size: 4.25em;
       color: #3E3A39;
+      margin: 0;
     }
-        
+
     h4{
-      font-family: "Bitter", serif; 
+      font-family: "Bitter", serif;
       font-size: 2.625em;
       font-style: italic;
       font-weight: 400;
       color: #3E3A39;
+      margin: 0;
     }
-        
+
     h5{
-      font-family: "DM Sans", sans-serif; 
+      font-family: "DM Sans", sans-serif;
       font-size: 2.625em;
       color: #3E3A39;
+      margin: 0;
     }
-        
+
     h6{
-      font-family: "DM Sans", sans-serif; 
+      font-family: "DM Sans", sans-serif;
       font-size: 1.625em;
       color: #3E3A39;
       font-weight: 500;
+      margin: 0;
     }
-        
+
     p{
-      font-family: "DM Sans", sans-serif; 
+      font-family: "DM Sans", sans-serif;
       font-size: 1.3em;
       color: #3E3A39;
+      margin: 0;
     }
-        
+
     /**menu bar**/
     .menu-bar{
       display: flex;
@@ -69,48 +76,50 @@
       align-items: center;
       padding: 0px 50px;
     }
-        
+
     .menu-bar img{
       height: 75px;
+      display: block;
     }
-        
+
     .nav-links{
       display: flex;
       gap: 30px;
+      align-items: center;
     }
-        
+
     .nav-links a{
       text-decoration: none;
       color: #3E3A39;
     }
-        
+
     .nav-links a:hover{
       color: #6A7E92;
     }
 
     /**header**/
     .header{
-      padding: 50px 0px;
+      padding: 90px 0px 140px;
       text-align: center;
-      padding-bottom: 200px;
     }
-      
-    .header h1,
-    .header h6{
-      margin: 0px;
-      padding: 30px 0px;
-    }
-       
-    .header h1{
-      padding-top: 75px;
-    }
-      
+
     .header h6{
       color: #6A7E92;
-      margin: 0px;
       padding: 0px 190px;
+      margin-top: 18px;
     }
-     
+
+    .header .intro{
+      max-width: 980px;
+      margin: 40px auto 0px;
+      padding: 0px 190px;
+      text-align: left;
+      line-height: 1.85;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
     /**content**/
     .overview-section{
       padding: 0px 0;
@@ -126,42 +135,38 @@
 
     .overview-text{
       flex: 1;
-      padding: 0 100px;
+      padding: 90px 100px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       background-color: #E3DBCC;
-    }
-
-    .overview-text h2,
-    .overview-text h6,
-    .overview-text p{
-      padding-right: 40px;
-      color: #3E3A39;
-      text-align: left;
+      gap: 16px;
     }
 
     .overview-text p{
-      padding-bottom: 75px;
-      line-height: 1.8;
+      line-height: 1.85;
+      max-width: 720px;
     }
 
     .overview-image{
       flex: 1;
       background-color: #F5F1EA;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     .overview-image img{
       width: 100%;
-      height: auto; 
-      object-fit: contain;   
+      height: auto;
+      object-fit: contain;
       display: block;
-      padding: 40px;           
+      padding: 60px;
       box-sizing: border-box;
     }
 
     .brand-section{
-      background-color: #6A7E92; 
+      background-color: #6A7E92;
     }
 
     .brand-container{
@@ -184,27 +189,31 @@
 
     .brand-text{
       flex: 1;
-      padding: 60px;
+      padding: 90px 70px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       background-color: #6A7E92;
       text-align: center;
       min-width: 280px;
+      gap: 18px;
     }
 
     .brand-title{
       font-family: "Bitter", serif;
       font-size: 2.5em;
       color: #F5F1EA;
-      margin-bottom: 20px;
+      margin: 0;
     }
 
     .brand-text p{
       font-family: "DM Sans", sans-serif;
       font-size: 1.2em;
       color: #F5F1EA;
-      line-height: 1.8;
+      line-height: 1.9;
+      max-width: 640px;
+      margin: 0 auto;
+      white-space: pre-line;
     }
 
     .rebrand-closing{
@@ -224,8 +233,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 40px;
-      background-color: #DFB899; 
+      padding: 60px;
+      background-color: #DFB899;
       min-width: 320px;
     }
 
@@ -239,20 +248,20 @@
 
     .rebrand-text{
       flex: 1;
-      padding: 80px;
+      padding: 90px 80px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       max-width: 800px;
       min-width: 320px;
+      gap: 22px;
     }
 
     .rebrand-text p{
       font-family: "DM Sans", sans-serif;
       font-size: 1.3em;
-      line-height: 1.9;
+      line-height: 1.95;
       color: #3E3A39;
-      margin-bottom: 30px;
     }
 
     .soft-outro{
@@ -260,105 +269,96 @@
       font-size: 1.2em;
     }
 
-    .rebrand-text img{
-      max-height: 75px;
-      max-width: 75px;
-    }
-    
-    .logo-pair-balanced{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 60px;
-    }
-
-    .logo-box{
-      width: 100px; 
-      height: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: transparent;
-    }
-
-    .logo-box img{
-      max-width: 90%;
-      max-height: 90%;
-      object-fit: contain;
-      display: block;
-    }
-
-    /** Color blocks **/
-    .bg-blueprint{ background-color: #6A7E92; }
-    .bg-amber-hush{ background-color: #DFB899; }
-    .bg-jakarta-dusk{ background-color: #E3DBCC; }
-    .bg-vyka-lume{ background-color: #90B4D3; }
-    .bg-clay{ background-color: #A4978E; }
-
-    /**small responsiveness so it doesn’t explode on laptop**/
+    /**small responsiveness**/
     @media (max-width: 980px){
-      .header h6{ padding: 0px 40px; }
-      .overview-text{ padding: 0 40px; }
-      .overview-text h2,
-      .overview-text h6,
-      .overview-text p{ padding-right: 0px; }
-      .brand-text{ padding: 40px; }
-      .rebrand-text{ padding: 50px; }
+      .menu-bar{ padding: 0px 22px; }
+
+      .header{
+        padding: 70px 0px 110px;
+      }
+
+      .header h6{
+        padding: 0px 40px;
+      }
+
+      .header .intro{
+        padding: 0px 40px;
+      }
+
+      .overview-text{
+        padding: 70px 40px;
+      }
+
+      .overview-image img{
+        padding: 40px;
+      }
+
+      .brand-text{
+        padding: 70px 40px;
+      }
+
+      .rebrand-image{
+        padding: 40px;
+      }
+
+      .rebrand-text{
+        padding: 70px 50px;
+      }
+
       h1{ font-size: 4.5em; }
       h2{ font-size: 3em; }
     }
   </style>
 </head>
-  
+
 <body>
   <!--Menu Bar-->
   <div class="menu-bar">
-    <a href="https://jj565656.github.io/RchavPortfolio-landing/"> 
+    <a href="https://jj565656.github.io/RchavPortfolio-landing/">
       <img src="RChav Logo New.png" alt="RChav full logomark in old ink">
     </a>
     <div class="nav-links">
       <h5><a href="https://jj565656.github.io/RchavPortfolio-about/">About</a></h5>
       <h5><a href="https://jj565656.github.io/RchavPortfolio-projects/">Projects</a></h5>
       <h5><a href="https://jj565656.github.io/RchavPortfolio-Contacts/">Contact</a></h5>
-    </div>   
+    </div>
   </div>
-    
+
   <!--header-->
   <div class="header">
-    <h1>ADGI Week 2025</h1> 
-    <h6>A visual system built for momentum, dialogue, and creative exchange</h6>
-    <h6>Modular, scalable, and built to move across formats</h6>
+    <h1>ADGI Week 2025</h1>
+    <h6>An identity representing design as process, not product</h6>
+
+    <div class="intro">
+      <p>ADGI Design Week is a national-scale exhibition initiated by the Asosiasi Desainer Grafis Indonesia (Indonesian Graphic Designers Association), positioning Indonesian graphic design within a global context. The 2025 theme, Poliformat, frames design as a process that moves across mediums, disciplines, and generations.</p>
+      <p>This project takes that context and responds by treating the visual identity not as a fixed outcome, but as a mindset. The system prioritizes continuity over consistency and adaptability over finality, allowing the identity to shift across formats, information densities, and moments while remaining cohesive throughout the week.</p>
+    </div>
   </div>
-  
+
   <!--content-->
   <section class="overview-section">
     <div class="overview-container">
       <div class="overview-text">
-        <h2>Overview</h2>
+        <h2>Approach & Role</h2>
         <h6>Event Identity | Visual System | Digital + Print Rollout</h6>
-        <p>
-          ADGI Week 2025 is a design week identity concept built to feel alive and adaptable. The system is designed around
-          strong typographic hierarchy, flexible layout rules, and a visual rhythm that can scale from posters to social
-          templates to venue signage without losing clarity.
-        </p>
+        <p>I was responsible for translating the Poliformat theme into a visual approach and developing the core logic of the identity. The focus was on designing relationships between typography, layout, and content rather than isolated compositions. The system was tested across multiple applications with varying information density, requiring the identity to remain legible and recognizable while adapting to different formats. This process emphasized thinking in terms of rules and principles, rather than relying on decorative or fixed solutions.</p>
       </div>
       <div class="overview-image">
         <img src="ADGI2.png" alt="ADGI Week 2025 cover visual">
       </div>
     </div>
   </section>
-    
+
   <section class="brand-section">
     <div class="brand-container">
       <div class="brand-image">
         <img src="ADGI3D.jpeg" alt="ADGI Week 2025 poster system mockup left">
       </div>
       <div class="brand-text">
-        <h4 class="brand-title">Design Intent</h4>
-        <p>
-          A system that stays consistent while the content changes daily. The grid stays structured, the type stays loud
-          and readable, and the layout can flex between minimal announcements and dense schedules without turning messy.
-        </p>
+        <h4 class="brand-title">Challenges & Learning</h4>
+        <p>A key challenge was letting go of overly controlled layouts. Early explorations prioritized visual impact but quickly failed when applied to real content and repeated use. This exposed the limits of designing outcomes instead of systems.
+
+Through iteration, I learned that flexibility comes from restraint and clarity, not added complexity. Designing for change required refining constraints, accepting variation, and trusting the system to carry the identity over time rather than forcing consistency in every application.</p>
       </div>
       <div class="brand-image">
         <img src="ADGI3D2.jpeg" alt="ADGI Week 2025 poster system mockup right">
@@ -372,16 +372,9 @@
         <img src="ADGI3.png" alt="ADGI Week 2025 design system board or collage">
       </div>
       <div class="rebrand-text">
-        <p>
-          The goal wasn’t to make something decorative. It was to build a system that can actually survive a real event
-          rollout. Everything is modular on purpose: consistent rules, flexible layouts, and enough variation to keep the
-          energy up without losing the identity.
-        </p>
-        <p class="soft-outro">
-          If this project feels like it’s moving even when it’s still, that’s the point.
-        </p>
-      
-        
+        <p>The goal wasn’t to make something visually pleasing. It was to create an identity that communicates a way of thinking, one that reflects design as an active process rather than a finished object.</p>
+        <p>Built for real conditions, the system responds to change, repetition, and constraint. Its structure encourages viewers to notice continuity, variation, and rhythm over time, inviting them to engage with the work as something unfolding rather than static.</p>
+        <p class="soft-outro">If this project feels like it’s moving even when it’s still, that’s the point.</p>
       </div>
     </div>
   </section>
